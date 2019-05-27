@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class KMasPequenios extends Abstracta {
+public class KMasPequenios extends EjercicioOIA {
 	
 	private int cantValores;
 	private int cantPequenios;

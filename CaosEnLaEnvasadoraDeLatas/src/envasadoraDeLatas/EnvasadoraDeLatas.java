@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class EnvasadoraDeLatas extends Abstracta {
+public class EnvasadoraDeLatas extends EjercicioOIA {
 	
 	private ArrayList<Character> latas;
 	private Secuencia secuenciaMasLarga;

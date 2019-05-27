@@ -10,7 +10,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class NombresRepetidos extends Abstracta {
+public class NombresRepetidos extends EjercicioOIA {
 	
 	private Map<String, Integer> nombres;
 	private TreeMap<Integer, String> repetidos;

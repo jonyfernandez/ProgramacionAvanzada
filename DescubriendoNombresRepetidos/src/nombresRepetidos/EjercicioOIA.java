@@ -1,17 +1,18 @@
-package kmaspequenios;
+package nombresRepetidos;
 
 import java.io.File;
 import java.io.IOException;
 
-public abstract class Abstracta {
+public abstract class EjercicioOIA {
 	
 	protected File entrada;
 	protected File salida;
 	
-	public Abstracta(File entrada, File salida){
+	public EjercicioOIA(File entrada, File salida){
 		this.entrada = entrada;
 		this.salida = salida;
 	}
 	
 	public abstract void resolver() throws IOException;
+
 }
