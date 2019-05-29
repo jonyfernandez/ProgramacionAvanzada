@@ -1,9 +1,13 @@
 package complejo;
 
+import java.util.Arrays;
+
+import org.junit.Assert;
+
 public class Complejo implements Comparable<Complejo>{
 	
-	private double real;
-	private double imaginario;
+	Double real;
+	Double imaginario;
 	
 	//EN JAVA NO SE PUEDE SOBRECARGAR OPERADORES Y TAMPOCO NO HAY DESTRUCTORES.
 
@@ -60,6 +64,10 @@ public class Complejo implements Comparable<Complejo>{
 		
 	}
 	
+	public Complejo sumarEscalar(double escalar){
+		return new Complejo(this.real + escalar,this.imaginario);
+	}
+	
 	///Si dos objetos son iguales siempre dan lo mismo HashCode.
 
 	@Override
@@ -106,6 +114,19 @@ public class Complejo implements Comparable<Complejo>{
 		
 		return 0;*/	
 		
+	}
+	
+	public void queOrdena(Complejo vec[]){
+		Complejo[] vector ={
+			new Complejo(21,32),new Complejo(5,2),new Complejo(1,-6)	
+		};
+		
+		Complejo[] vectorOrdenado ={
+				new Complejo(1,-6) ,new Complejo(5,2),new Complejo(21,32)
+			};
+		
+		Arrays.sort(vector);
+		Assert.assertArrayEquals(vectorOrdenado, vector);
 	}
 	
 }
