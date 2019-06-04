@@ -4,8 +4,9 @@ import java.io.File;
 import java.io.IOException;
 
 public abstract class EjercicioOIA {
-	File entrada;
-	File salida;
+	
+	protected File entrada;
+	protected File salida;
 	
 	public EjercicioOIA(File entrada, File salida){
 		this.entrada = entrada;
